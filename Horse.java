@@ -1,5 +1,10 @@
-public class Horse {
-    public void run(Integer speed){
-        System.out.println("Я умею бегать со скоростью" +  speed);
+public class Horse extends Animal {
+    public Horse(String animal, String ownerName) {
+        this.nameAnimal = animal;
+        this.ownerName = ownerName;     
+    }
+    
+    public void eat(){
+        System.out.println("Обожаю кушать травку на лугу. м-м-м-м");
     }
 }

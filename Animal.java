@@ -6,11 +6,11 @@ public class Animal {
     protected Boolean isVaccinated;
     protected final String TYPE = getClass().getSimpleName();
 
-    public Animal(String animal, String ownerName, String diagnosis, Boolean isVaccinated) {
+    public Animal(String animal, String ownerName) {
         this.nameAnimal = animal;
         this.ownerName = ownerName;
-        this.diagnosis = diagnosis;
-        this.isVaccinated = isVaccinated;
+        // this.diagnosis = diagnosis;
+       // this.isVaccinated = isVaccinated;
     }
 
     public Animal() {

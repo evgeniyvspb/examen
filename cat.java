@@ -1,34 +1,33 @@
-public class Cat extends Animal{
-    private int countPaws;
+public class Cat extends Animal {
     
-    public Cat (){
-        this("Max",null,null, false, 4);
+    public Cat(String animal, String ownerName) {
+        this.nameAnimal = animal;
+        this.ownerName = ownerName;     
     }
-    public Cat (String animal, String ownerName, String diagnosis, Boolean isVaccinated, int countPaws ){
-        super( animal, ownerName,diagnosis,  isVaccinated);
-        this.countPaws = countPaws;
-    }
-    private void wakeUp (){
+
+    private void wakeUp() {
         System.out.println("Кот проснулся");
     }
-    private void findFood (){
+
+    private void findFood() {
         System.out.println("Кот нашел еду");
     }
-    private void eat (){
+
+    private void eat() {
         System.out.println("Кот поел");
     }
-    private void sleep (){
+
+    private void sleep() {
         System.out.println("Кот уснул");
     }
-   public void hunt(){
-    
-    wakeUp(); 
-    findFood ();
-    eat ();
-    sleep();
-   }
 
-    
+    public void hunt() {
+
+        wakeUp();
+        findFood();
+        eat();
+        sleep();
+    }
 
     public void run(Integer speed) {
         System.out.println("I can run with a speed " + speed);
@@ -37,6 +36,5 @@ public class Cat extends Animal{
     public void ill() {
         System.out.println("I am ill");
     }
-
 
 }
